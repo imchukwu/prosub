@@ -25,44 +25,57 @@ interface ValueCardProps {
   description: string;
 }
 
-// Banner Section Component
+// Updated Banner Section Component
 const AboutBanner = () => {
+
+  const theme = useTheme(); // Add this line to access the theme
+  
   return (
-    <Box
-      sx={{
-        height: "40vh",
-        minHeight: 400,
-        backgroundImage:
-          "linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url(/images/about-banner.jpg)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        color: "white",
-        textAlign: "center",
-        mb: 8,
-      }}
-    >
-      <Container sx={{ maxWidth: "lg" }}>
-        <Typography
-          variant="h1"
-          sx={{
-            fontWeight: 700,
-            mb: 3,
-            textShadow: "0 2px 4px rgba(0,0,0,0.5)",
-          }}
-        >
-          About PROSUB
+    <Box sx={{
+      height: '40vh',
+      minHeight: 400,
+      backgroundImage: 'linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url(/images/about-banner.jpg)',
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'white',
+      textAlign: 'center',
+      position: 'relative',
+      overflow: 'hidden',
+      '&:before': {
+        content: '""',
+        position: 'absolute',
+        bottom: 0,
+        left: 0,
+        right: 0,
+        height: '100px',
+        background: `linear-gradient(to top, ${theme.palette.background.default}, transparent)`,
+        zIndex: 1
+      }
+    }}>
+      <Container sx={{ 
+        maxWidth: 'lg',
+        position: 'relative',
+        zIndex: 2 
+      }}>
+        <Typography variant="h1" sx={{ 
+          fontWeight: 800, 
+          mb: 3,
+          fontSize: { xs: '2.5rem', md: '3.5rem' },
+          textShadow: '0 2px 10px rgba(0,0,0,0.3)'
+        }}>
+          About PROSUB Nigeria
         </Typography>
-        <Typography
-          variant="h4"
-          sx={{
-            fontWeight: 400,
-            textShadow: "0 1px 3px rgba(0,0,0,0.5)",
-          }}
-        >
-          Pioneering Underwater Engineering Solutions Since 2016
+        <Typography variant="h4" sx={{ 
+          fontWeight: 400,
+          fontSize: { xs: '1.5rem', md: '2rem' },
+          textShadow: '0 1px 5px rgba(0,0,0,0.3)',
+          maxWidth: 800,
+          margin: '0 auto'
+        }}>
+          Delivering excellence through innovative underwater engineering and marine solutions since 2016
         </Typography>
       </Container>
     </Box>

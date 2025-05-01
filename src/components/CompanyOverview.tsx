@@ -61,9 +61,9 @@ const CompanyOverview = () => {
               color: "white",
             }}
           >
-            <Typography variant="h6">Trusted Since 1998</Typography>
+            <Typography variant="h6">Trusted Since 2016</Typography>
             <Typography variant="body2">
-              20+ Years of Industry Excellence
+              A decade of Industry Excellence
             </Typography>
           </Box>
         </Box>

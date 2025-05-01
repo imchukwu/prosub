@@ -10,11 +10,12 @@ import {
   Divider,
 } from "@mui/material";
 import {
-  Engineering,
-  ScubaDiving,
-  SettingsRemote,
-  Construction,
-  MedicalServices,
+  Map,
+  BugReport,
+  Inventory,
+  PrecisionManufacturing,
+  LocalShipping,
+  OilBarrel,
   Phone,
   Email,
   ChevronRight,
@@ -104,46 +105,46 @@ const ServicesPage = () => {
 
   const services = [
     {
-      title: "Commercial Diving",
-      icon: <ScubaDiving fontSize="inherit" />,
+      title: "Hydrographic Positioning & Bathymetric Survey",
+      icon: <Map fontSize="inherit" />,
       description:
-        "IMCA-certified diving teams for underwater construction, inspection, and maintenance",
-      link: "/services/diving",
+        "Precision seabed mapping and positioning services with IHO-compliant standards",
+      link: "/services/hydrographic-survey",
     },
     {
-      title: "ROV Operations",
-      icon: <SettingsRemote fontSize="inherit" />,
+      title: "Offshore Vessel Fumigation",
+      icon: <BugReport fontSize="inherit" />,
       description:
-        "Advanced remotely operated vehicles for deepwater inspections and interventions",
-      link: "/services/rov",
+        "IMO-compliant pest control and sanitization services for marine vessels",
+      link: "/services/fumigation",
     },
     {
-      title: "Offshore Construction",
-      icon: <Engineering fontSize="inherit" />,
+      title: "Procurement Services",
+      icon: <Inventory fontSize="inherit" />,
       description:
-        "Specialized installation and maintenance of offshore structures and pipelines",
-      link: "/services/construction",
+        "End-to-end procurement solutions for marine and offshore operations",
+      link: "/services/procurement",
     },
     {
-      title: "Pipeline Services",
-      icon: <Construction fontSize="inherit" />,
+      title: "Equipment Rental",
+      icon: <PrecisionManufacturing fontSize="inherit" />,
       description:
-        "Comprehensive pipeline inspection, maintenance, and repair solutions",
-      link: "/services/pipelines",
+        "Diving, ROV and survey equipment rental with full technical support",
+      link: "/services/equipment-rental",
     },
     {
-      title: "Marine Support",
-      icon: <Engineering fontSize="inherit" />,
+      title: "Environmental & Oil Spill Containment",
+      icon: <LocalShipping fontSize="inherit" />,
       description:
-        "Vessel operations, marine logistics, and offshore support services",
-      link: "/services/marine",
+        "Rapid response solutions for marine environmental emergencies",
+      link: "/services/oil-spill",
     },
     {
-      title: "HSE Consulting",
-      icon: <MedicalServices fontSize="inherit" />,
+      title: "Drilling & Offshore Waste Management",
+      icon: <OilBarrel fontSize="inherit" />,
       description:
-        "Health, Safety and Environmental management systems and training",
-      link: "/services/hse",
+        "Comprehensive waste solutions compliant with international regulations",
+      link: "/services/waste-management",
     },
   ];
 
@@ -187,7 +188,7 @@ const ServicesPage = () => {
               textShadow: "0 2px 10px rgba(0,0,0,0.3)",
             }}
           >
-            Marine & Offshore Solutions
+            Marine & Offshore Services
           </Typography>
           <Typography
             variant="h4"
@@ -199,13 +200,12 @@ const ServicesPage = () => {
               margin: "0 auto",
             }}
           >
-            Delivering excellence through innovative underwater engineering and
-            specialized marine services
+            Comprehensive solutions for the offshore energy and marine industries
           </Typography>
         </Container>
       </Box>
 
-      {/* Overview Section - Creative Approach */}
+      {/* Overview Section */}
       <Container maxWidth="lg" sx={{ py: 8, position: "relative" }}>
         <Box
           sx={{
@@ -246,7 +246,7 @@ const ServicesPage = () => {
             />
             <Box>
               <Typography variant="h3" gutterBottom sx={{ fontWeight: 700 }}>
-                Integrated Service Approach
+                Integrated Marine Solutions
               </Typography>
               <Divider
                 sx={{
@@ -257,15 +257,13 @@ const ServicesPage = () => {
                 }}
               />
               <Typography variant="body1" paragraph sx={{ fontSize: "1.1rem" }}>
-                At PROSUB, we combine technical expertise with innovative
-                solutions to deliver comprehensive marine services. Our
-                integrated approach ensures seamless project execution from
-                planning through completion.
+                PROSUB delivers specialized services to support offshore energy
+                operations with a focus on safety, compliance, and environmental
+                protection.
               </Typography>
               <Typography variant="body1" paragraph sx={{ fontSize: "1.1rem" }}>
-                With certified teams and advanced equipment, we maintain the
-                highest standards of safety, quality, and environmental
-                protection across all operations.
+                Our certified teams and modern equipment ensure reliable service
+                delivery across all marine and offshore applications.
               </Typography>
             </Box>
           </Stack>
@@ -283,10 +281,10 @@ const ServicesPage = () => {
           }}
         >
           {[
-            { value: "7+", label: "Years Experience" },
+            { value: "100+", label: "Projects Completed" },
             { value: "50+", label: "Certified Professionals" },
-            { value: "100%", label: "Safety Record" },
-            { value: "24/7", label: "Operations Support" },
+            { value: "24/7", label: "Emergency Response" },
+            { value: "100%", label: "Regulatory Compliance" },
           ].map((stat, index) => (
             <Box
               key={index}
@@ -311,7 +309,7 @@ const ServicesPage = () => {
           ))}
         </Box>
 
-        {/* Our Service Offerings (kept as is) */}
+        {/* Our Service Offerings */}
         <Typography
           variant="h3"
           align="center"
@@ -330,7 +328,7 @@ const ServicesPage = () => {
             },
           }}
         >
-          Our Service Offerings
+          Our Service Portfolio
         </Typography>
 
         <Box
@@ -364,7 +362,7 @@ const ServicesPage = () => {
           ))}
         </Box>
 
-        {/* CTA Section (kept as is) */}
+        {/* CTA Section */}
         <Box
           sx={{
             backgroundColor: theme.palette.primary.dark,
@@ -376,10 +374,10 @@ const ServicesPage = () => {
           }}
         >
           <Typography variant="h3" gutterBottom sx={{ fontWeight: 700, mb: 3 }}>
-            Ready to Discuss Your Project?
+            Need Marine Services?
           </Typography>
           <Typography variant="h5" gutterBottom sx={{ mb: 4 }}>
-            Our team is available 24/7 to provide expert consultation
+            Our experts are ready to discuss your project requirements
           </Typography>
           <Box
             sx={{

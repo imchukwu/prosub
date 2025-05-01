@@ -4,16 +4,17 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import ProjectsPage from "./pages/ProjectsPage";
-import EquipmentPage from "./pages/EquipmentPage";
+import EquipmentPage from "./pages/EquipmentRental";
 import ContactPage from "./pages/ContactPage";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import CommercialDiving from "./pages/CommercialDiving";
-import ROVOperations from "./pages/ROVOperations";
-import OffshoreConstruction from "./pages/OffshoreConstruction";
-import PipelineServices from "./pages/PipelineServices";
-import MarineSupport from "./pages/MarineSupport";
-import HSEConsulting from "./pages/HSEConsulting";
+import HydrographicSurvey from "./pages/HydrographicSurvey";
+import Procurement from "./pages/Procurement";
+import OffshoreFumigation from "./pages/OffshoreFumigation";
+import EquipmentRental from "./pages/EquipmentRental";
+import EnvironmentalContainment from "./pages/EnvironmentalContainment";
+import WasteManagement from "./pages/WasteManagement";
+
 const theme = createTheme({
   palette: {
     primary: {
@@ -38,12 +39,12 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/equipment" element={<EquipmentPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/services/diving" element={<CommercialDiving />} />
-          <Route path="/services/rov" element={<ROVOperations />} />
-          <Route path="/services/construction" element={<OffshoreConstruction />} />
-          <Route path="/services/pipeline" element={<PipelineServices />} />
-          <Route path="/services/marine" element={<MarineSupport />} />
-          <Route path="/services/hse" element={<HSEConsulting />} />
+          <Route path="/services/hydrographic" element={<HydrographicSurvey />} />
+          <Route path="/services/fumigation" element={<OffshoreFumigation />} />
+          <Route path="/services/procurement" element={<Procurement />} />
+          <Route path="/services/diving-rov" element={<EquipmentRental />} />
+          <Route path="/services/oil-spill" element={<EnvironmentalContainment />} />
+          <Route path="/services/drilling" element={<WasteManagement />} />
         </Routes>
         <Footer />
       </Router>

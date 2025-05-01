@@ -1,4 +1,3 @@
-// src/components/Navbar.tsx
 import { 
   AppBar, 
   Toolbar, 
@@ -17,11 +16,15 @@ import {
 } from 'react-router-dom';
 import { 
   ExpandMore,
-  ScubaDiving,
-  SettingsRemote,
-  Engineering,
+  Map, // For Hydrographic Survey
+  BugReport, // For Fumigation
+  Inventory, // For Procurement
+  PrecisionManufacturing, // For Equipment Rental
+  LocalShipping, // For Oil Spill Containment
+  Dangerous, // For Waste Management
   Construction,
-  MedicalServices
+  MedicalServices,
+  Engineering
 } from '@mui/icons-material';
 import { useState } from 'react';
 
@@ -32,34 +35,34 @@ const Navbar = () => {
 
   const services = [
     { 
-      name: "Commercial Diving", 
-      icon: <ScubaDiving fontSize="small" />, 
-      path: "/services/diving" 
+      name: "Hydrographic Positioning & Bathymetric Survey", 
+      icon: <Map fontSize="small" />, 
+      path: "/services/hydrographic" 
     },
     { 
-      name: "ROV Operations", 
-      icon: <SettingsRemote fontSize="small" />, 
-      path: "/services/rov" 
+      name: "Offshore Vessel Fumigation", 
+      icon: <BugReport fontSize="small" />, 
+      path: "/services/fumigation" 
     },
     { 
-      name: "Offshore Construction", 
-      icon: <Engineering fontSize="small" />, 
-      path: "/services/construction" 
+      name: "Procurement Services", 
+      icon: <Inventory fontSize="small" />, 
+      path: "/services/procurement" 
     },
     { 
-      name: "Pipeline Services", 
-      icon: <Construction fontSize="small" />, 
-      path: "/services/pipelines" 
+      name: "Equipment Rental", 
+      icon: <PrecisionManufacturing fontSize="small" />, 
+      path: "/services/equipment-rental" 
     },
     { 
-      name: "Marine Support", 
-      icon: <Engineering fontSize="small" />, 
-      path: "/services/marine" 
+      name: "Environmental & Oil Spill Containment", 
+      icon: <LocalShipping fontSize="small" />, 
+      path: "/services/oil-spill" 
     },
     { 
-      name: "HSE Consulting", 
-      icon: <MedicalServices fontSize="small" />, 
-      path: "/services/hse" 
+      name: "Drilling & Offshore Waste Management", 
+      icon: <Dangerous fontSize="small" />, 
+      path: "/services/waste-management" 
     }
   ];
 
@@ -91,7 +94,7 @@ const Navbar = () => {
               textDecoration: 'none'
             }}
           >
-            PROSUB Firm
+            PROSUB
           </Typography>
           
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 1, alignItems: 'center' }}>
@@ -124,7 +127,7 @@ const Navbar = () => {
                 elevation: 3,
                 sx: {
                   borderRadius: 2,
-                  minWidth: 220
+                  minWidth: 280
                 }
               }}
             >

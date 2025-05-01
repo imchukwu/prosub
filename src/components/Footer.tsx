@@ -88,6 +88,12 @@ const Footer = () => {
           <Typography variant="body2">
             Committed to Local Content Development • Strong HSE Culture • Community Social Responsibility
           </Typography>
+          <Typography variant="body2" sx={{ mt: 1 }}>
+            Developed by{' '}
+            <Link href="https://cimspace.com" target="_blank" rel="noopener" color="primary.light">
+              Cimspace
+            </Link>
+          </Typography>
         </Box>
       </Container>
     </Box>

@@ -1,48 +1,57 @@
-// src/components/HeroSlider.tsx
 import { useState, useEffect } from "react";
 import { Box, Typography, Button, useTheme } from "@mui/material";
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material";
-import { ScubaDiving, SettingsRemote } from "@mui/icons-material";
+import { 
+  Map, 
+  BugReport, 
+  Inventory, 
+  PrecisionManufacturing, 
+  LocalShipping, 
+  Dangerous 
+} from "@mui/icons-material";
 
 const slides = [
   {
-    title: "Offshore Drilling Support",
-    description: "Comprehensive solutions for your offshore operations",
-    image: "/images/offshore.png",
-    cta: "Explore Drilling Services",
+    title: "Hydrographic Positioning & Bathymetric Survey",
+    description: "Precision seabed mapping and underwater positioning services with IHO-compliant standards",
+    image: "/images/hydrographic-survey.jpg",
+    cta: "Explore Survey Services",
+    icon: <Map fontSize="large" />,
   },
   {
-    title: "Commercial Diving Services",
-    description: "Professional underwater operations with IMCA-certified teams",
-    image: "/images/diving.png",
-    cta: "View Diving Services",
-    icon: <ScubaDiving fontSize="large" />,
+    title: "Offshore Vessel Fumigation",
+    description: "IMO-compliant pest control and sanitization services for marine vessels and offshore platforms",
+    image: "/images/fumigation.jpg",
+    cta: "View Fumigation Services",
+    icon: <BugReport fontSize="large" />,
   },
   {
-    title: "ROV Operations",
-    description:
-      "Advanced remotely operated vehicles for deepwater inspections",
-    image: "/images/rov.png",
-    cta: "Explore ROV Capabilities",
-    icon: <SettingsRemote fontSize="large" />,
+    title: "Procurement Services",
+    description: "End-to-end marine procurement and supply chain solutions for offshore operations",
+    image: "/images/procurement.jpg",
+    cta: "Learn About Procurement",
+    icon: <Inventory fontSize="large" />,
   },
   {
-    title: "Pipeline Maintenance",
-    description: "Advanced pipeline inspection and repair services",
-    image: "/images/pipeline.png",
-    cta: "Learn About Maintenance",
+    title: "Diving, ROV and Equipment Rental",
+    description: "Premium diving, ROV and survey equipment rental with full technical support",
+    image: "/images/diving.jpg",
+    cta: "View Rental Equipment",
+    icon: <PrecisionManufacturing fontSize="large" />,
   },
   {
-    title: "Equipment Rental",
-    description: "State-of-the-art equipment for all your needs",
-    image: "/images/equip.png",
-    cta: "View Equipment",
+    title: "Environmental & Oil Spill Containment",
+    description: "Rapid response solutions for marine environmental emergencies and oil spill containment",
+    image: "/images/oil-spill.jpg",
+    cta: "Emergency Response",
+    icon: <LocalShipping fontSize="large" />,
   },
   {
-    title: "Safety Consulting",
-    description: "Industry-leading HSE consulting services",
-    image: "/images/safety.png",
-    cta: "Safety First",
+    title: "Drilling & Offshore Waste Management",
+    description: "Compliant treatment and disposal solutions for drilling waste and offshore operations",
+    image: "/images/drilling.jpg",
+    cta: "Waste Solutions",
+    icon: <Dangerous fontSize="large" />,
   },
 ];
 

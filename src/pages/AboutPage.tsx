@@ -397,7 +397,7 @@ const AboutPage = () => {
       </Box>
 
       {/* Management Team */}
-      <Container sx={{ maxWidth: "lg", mb: 8 }}>
+      {/* <Container sx={{ maxWidth: "lg", mb: 8 }}>
         <Typography
           variant="h3"
           align="center"
@@ -495,7 +495,7 @@ const AboutPage = () => {
             </Box>
           ))}
         </Box>
-      </Container>
+      </Container> */}
     </Box>
   );
 };

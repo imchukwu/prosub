@@ -108,7 +108,7 @@ const EquipmentRental = () => {
                         fontSize: { xs: '2.5rem', md: '3.5rem' },
                         textShadow: '0 2px 10px rgba(0,0,0,0.3)'
                     }}>
-                        Equipment Rental Services
+                        Diving, ROV and Survey Equipment Rental Services
                     </Typography>
                     <Typography variant="h4" sx={{ 
                         fontWeight: 400,

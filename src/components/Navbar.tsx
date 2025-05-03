@@ -50,7 +50,7 @@ const Navbar = () => {
       path: "/services/procurement" 
     },
     { 
-      name: "Equipment Rental", 
+      name: "Diving, ROV and Survey Equipment Rental", 
       icon: <PrecisionManufacturing fontSize="small" />, 
       path: "/services/equipment-rental" 
     },

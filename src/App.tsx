@@ -37,14 +37,14 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/equipment" element={<EquipmentPage />} />
+          {/* <Route path="/equipment" element={<EquipmentPage />} /> */}
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/services/hydrographic" element={<HydrographicSurvey />} />
           <Route path="/services/fumigation" element={<OffshoreFumigation />} />
           <Route path="/services/procurement" element={<Procurement />} />
-          <Route path="/services/diving-rov" element={<EquipmentRental />} />
+          <Route path="/services/equipment-rental" element={<EquipmentRental />} />
           <Route path="/services/oil-spill" element={<EnvironmentalContainment />} />
-          <Route path="/services/drilling" element={<WasteManagement />} />
+          <Route path="/services/waste-management" element={<WasteManagement />} />
         </Routes>
         <Footer />
       </Router>
